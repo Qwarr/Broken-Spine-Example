@@ -1,0 +1,176 @@
+path_settings {
+  path: "/_assets/bgs/*.atlas"
+  profile: "webp-lossy"
+}
+path_settings {
+  path: "/_assets/bgs_locations/**/*.atlas"
+  profile: "webp-lossy"
+}
+path_settings {
+  path: "/_assets/nexus/3d/nexus_3d.atlas"
+  profile: "webp-2048"
+}
+path_settings {
+  path: "/_assets/nexus/3d_2/nexus_3d_2.atlas"
+  profile: "webp-2048"
+}
+path_settings {
+  path: "/_assets/Game/game_cards.atlas"
+  profile: "webp-4096"
+}
+path_settings {
+  path: "/_assets/Game/game_screen.atlas"
+  profile: "webp-4096"
+}
+path_settings {
+  path: "/_assets/Game/**/*.atlas"
+  profile: "webp-2048"
+}
+path_settings {
+  path: "/_assets/theater/cutscenes/side_buffers_atlas.atlas"
+  profile: "Default"
+}
+path_settings {
+  path: "/_assets/theater/cutscenes/0/intro_atlas.atlas"
+  profile: "webp-2048"
+}
+path_settings {
+  path: "/_assets/theater/cutscenes/**/*.atlas"
+  profile: "webp-lossy"
+}
+path_settings {
+  path: "/_assets/nexus/nexus.atlas"
+  profile: "webp-2048"
+}
+path_settings {
+  path: "/_assets/bgs_locations/arcane/**/*.atlas"
+  profile: "webp-lossy"
+}
+path_settings {
+  path: "/_assets/Game/eol_scrolls_atlas.atlas"
+  profile: "webp-2048"
+}
+path_settings {
+  path: "/_assets/Game/game_eol.atlas"
+  profile: "webp-2048"
+}
+path_settings {
+  path: "/_assets/Game/drops.atlas"
+  profile: "webp-2048"
+}
+path_settings {
+  path: "/_assets/help/help_gen.atlas"
+  profile: "webp-2048"
+}
+path_settings {
+  path: "/_assets/faeland/faeland.atlas"
+  profile: "webp-2048"
+}
+path_settings {
+  path: "/_assets/pets/pet_atlas.atlas"
+  profile: "webp-2048"
+}
+path_settings {
+  path: "/_assets/pets/pets_series_1.atlas"
+  profile: "webp-2048"
+}
+path_settings {
+  path: "/_assets/pets/pets_series_2.atlas"
+  profile: "webp-2048"
+}
+path_settings {
+  path: "**"
+  profile: "webp-2048"
+}
+profiles {
+  name: "Default"
+  platforms {
+    os: OS_ID_GENERIC
+    formats {
+      format: TEXTURE_FORMAT_RGBA
+      compression_level: NORMAL
+      compression_type: COMPRESSION_TYPE_WEBP
+    }
+    mipmaps: false
+    max_texture_size: 1024
+    premultiply_alpha: true
+  }
+}
+profiles {
+  name: "webp-lossy"
+  platforms {
+    os: OS_ID_GENERIC
+    formats {
+      format: TEXTURE_FORMAT_RGB
+      compression_level: NORMAL
+      compression_type: COMPRESSION_TYPE_WEBP_LOSSY
+    }
+    mipmaps: false
+    max_texture_size: 1024
+    premultiply_alpha: true
+  }
+}
+profiles {
+  name: "webp"
+  platforms {
+    os: OS_ID_GENERIC
+    formats {
+      format: TEXTURE_FORMAT_RGBA
+      compression_level: NORMAL
+      compression_type: COMPRESSION_TYPE_WEBP
+    }
+    mipmaps: false
+    max_texture_size: 1024
+    premultiply_alpha: true
+  }
+}
+profiles {
+  name: "webp-2048"
+  platforms {
+    os: OS_ID_GENERIC
+    formats {
+      format: TEXTURE_FORMAT_RGBA
+      compression_level: NORMAL
+      compression_type: COMPRESSION_TYPE_WEBP
+    }
+    mipmaps: false
+    max_texture_size: 2048
+    premultiply_alpha: true
+  }
+}
+profiles {
+  name: "webp-4096"
+  platforms {
+    os: OS_ID_GENERIC
+    formats {
+      format: TEXTURE_FORMAT_RGBA
+      compression_level: BEST
+      compression_type: COMPRESSION_TYPE_WEBP
+    }
+    mipmaps: false
+    max_texture_size: 4096
+    premultiply_alpha: true
+  }
+}
+profiles {
+  name: "webp-lossy-2048"
+  platforms {
+    os: OS_ID_GENERIC
+    formats {
+      format: TEXTURE_FORMAT_RGB
+      compression_level: NORMAL
+      compression_type: COMPRESSION_TYPE_WEBP_LOSSY
+    }
+    mipmaps: false
+    max_texture_size: 2048
+  }
+  platforms {
+    os: OS_ID_GENERIC
+    formats {
+      format: TEXTURE_FORMAT_RGB
+      compression_level: FAST
+      compression_type: COMPRESSION_TYPE_DEFAULT
+    }
+    mipmaps: false
+  }
+}

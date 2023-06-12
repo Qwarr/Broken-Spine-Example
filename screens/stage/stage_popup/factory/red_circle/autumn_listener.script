@@ -1,0 +1,31 @@
+
+local acl = require("screens.stage.stage_popup.factory.actor_common_listen")
+
+function init(self)
+	self.name = "Red"
+	acl.init(self)
+end
+
+function final(self)
+	acl.final(self)
+end
+
+function update(self, dt)
+	acl.update(self, dt)
+end
+
+function fixed_update(self, dt)
+	acl.fixed_update(self, dt)
+end
+
+function on_message(self, message_id, message, sender)
+	acl.on_message(self, message_id, message, sender)
+end
+
+function on_input(self, action_id, action)
+	acl.on_input(self, action_id, action)
+end
+
+function on_reload(self)
+	acl.on_reload(self)
+end

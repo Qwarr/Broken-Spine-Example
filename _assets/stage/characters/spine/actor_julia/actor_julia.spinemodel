@@ -1,0 +1,6 @@
+spine_scene: "/_assets/stage/characters/spine/actor_julia/actor_julia.spinescene"
+default_animation: "true_idle"
+skin: ""
+blend_mode: BLEND_MODE_ALPHA
+material: "/defold-spine/assets/spine.material"
+create_go_bones: false
