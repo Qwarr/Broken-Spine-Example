@@ -27,9 +27,4 @@ components {
     z: 0.0
     w: 1.0
   }
-  properties {
-    id: "screen_id"
-    value: "nexus"
-    type: PROPERTY_TYPE_HASH
-  }
 }

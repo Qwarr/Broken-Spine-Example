@@ -10,7 +10,7 @@ portal_build = 0
 translating_build = 0
 
 [bootstrap]
-main_collection = /main/main.collectionc
+main_collection = /screens/nexus/nexus.collectionc
 render = /builtins/render/default.renderc
 
 [input]
@@ -65,7 +65,7 @@ max_particle_count = 4096
 max_emitter_count = 512
 
 [graphics]
-texture_profiles = /main/webp-2048min.texture_profiles
+texture_profiles = /builtins/graphics/default.texture_profiles
 max_debug_vertices = 50000
 
 [sound]
